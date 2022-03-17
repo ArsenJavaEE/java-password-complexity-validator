@@ -233,7 +233,7 @@ public class PasswordComplexityValidator {
         }
 
         if (passwordLen > maxPasswordLength) {
-            throw new PasswordComplexityException("The password must be at less than " + maxPasswordLength + " characters in length.");
+            throw new PasswordComplexityException("The password must be less than " + maxPasswordLength + " characters in length.");
         }
 
         int alphaLowerCharsCount = 0;
